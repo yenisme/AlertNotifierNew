@@ -4,7 +4,7 @@ __attribute__((constructor))
 static void showAlertAfterLaunch() {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
-                                                                       message:@"Inbox thì cứ thêm vài từ \"Mình sẽ trả phí\" là được 😆"
+                                                                       message:@"Inbox thì cứ thêm vài từ "Mình sẽ trả phí" là được 😆"
                                                                 preferredStyle:UIAlertControllerStyleAlert];
 
         // Tiêu đề
